@@ -10,6 +10,7 @@ const loginRouter = require("./controllers/login");
 require("dotenv").config();
 
 const app = express();
+app.use(express.static("dist"));
 
 const middleware = require("./utils/middleware");
 const { info, errorMsg } = require("./utils/logger");
