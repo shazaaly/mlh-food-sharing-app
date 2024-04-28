@@ -1,0 +1,74 @@
+get http://localhost:4000/api/recipient
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3RhYyB2aXJ1cyIsImlkIjoiNjYyZDQ0YzNmOTgwZmI3NTExOTc1YmNkIiwiaWF0IjoxNzE0MjQzNTE5fQ.j8GFYdXzAaZkb57olwfBqCpMQ3m9btUnAtybyIRLCHQ
+###
+
+post http://localhost:4000/api/user
+Content-Type: application/json
+
+{
+    "name": "leonardo",
+    "email": "leo@gmail.com",
+    "password": "azerty",
+    "role": "donor",
+    "activityModel": "fuck"
+}
+
+
+###
+
+post http://localhost:4000/api/recipient
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3RhYyB2aXJ1cyIsImlkIjoiNjYyZGQ1MmRkNDAzZTA0YjRhMDY0Y2FkIiwiaWF0IjoxNzE0Mjc5ODU5fQ.G9hHbzVzLqskbqMLlhDzR-HEKwKZHLeT5PErWARxwRU
+
+{
+    "name": "fish carton",
+    "quantity": 50,
+    "requestedDate": "30/05/2025",
+    "isClaimed": false,
+    "receiver": "stac"
+}
+
+###
+post http://localhost:4000/api/donation
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFyY3VzIiwiaWQiOiI2NjJkZDU2M2Q0MDNlMDRiNGEwNjRjYWYiLCJpYXQiOjE3MTQyODEwNjh9.IRqrq7T2ItalRp4PaPlkBHnKlSfr80c7zftTN_wO3Ek
+
+{
+    "name": "Onion bag",
+    "quantity": 180,
+    "expirationDate": "25/12/2024",
+    "isClaimed": false,
+    "donor": "stac virus"
+}
+
+###
+get http://localhost:4000/api/donation/662d202ea584e07c17f3cf04
+
+
+###
+
+put http://localhost:4000/api/recipient
+Content-Type: application/json
+
+{
+    "name": "Bags of rice",
+    "quantity": 80,
+    "requestedDate": "25/12/2024",
+    "isClaimed": false,
+    "receiver": "Djamen",
+    "id": "662d39c2842e651f3df0900b"
+}
+
+###
+
+post http://localhost:4000/api/login
+Content-Type: application/json
+
+{
+    "name": "marcus",
+    "password": "azerty"
+}
+
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3RhYyB2aXJ1cyIsImlkIjoiNjYyZGQ1MmRkNDAzZTA0YjRhMDY0Y2FkIiwiaWF0IjoxNzE0Mjc5ODU5fQ.G9hHbzVzLqskbqMLlhDzR-HEKwKZHLeT5PErWARxwRU
+
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFyY3VzIiwiaWQiOiI2NjJkZDU2M2Q0MDNlMDRiNGEwNjRjYWYiLCJpYXQiOjE3MTQyODEwNjh9.IRqrq7T2ItalRp4PaPlkBHnKlSfr80c7zftTN_wO3Ek
