@@ -1,0 +1,13 @@
+.dividerHead {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--lightGreen);
+  border-bottom: 3px solid var(--darkGreen);
+  color: var(--white);
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.goalSection {
+  padding: 1.2em 25rem;
+}

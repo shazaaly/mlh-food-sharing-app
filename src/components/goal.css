@@ -1,0 +1,31 @@
+.goals {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.goalOne {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.goalTwo {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 30%);
+  gap: 20px;
+  justify-content: center;
+}
+
+.goalTwo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 5px;
+  background-color: color-mix(in srgb, var(--lightGreen) 30%, var(--white) 70%);
+  border-radius: 10px;
+  outline: 3px solid var(--berge);
+}
