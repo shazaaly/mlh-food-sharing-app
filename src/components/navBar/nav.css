@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  background-color: var(--lightGreen);
+  border-bottom: var(--darkGreen) solid 3px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 30%;
+  /* border: solid; */
+  align-items: center;
+  padding: 0;
+}
+
+nav ul li {
+  color: var(--white);
+  font-size: 20px;
+  /* border: red solid; */
+  font-weight: normal;
+  transition: all 0.5s ease;
+  background-image: linear-gradient(90deg, var(--darkGreen), var(--lightGreen));
+  background-size: 0% 3px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 7px;
+}
+
+nav ul li:hover {
+  transform: scale(1.2);
+  background-size: 100% 3px;
+}
+
+nav .logo {
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}

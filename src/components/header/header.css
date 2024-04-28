@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  padding: 50px 0;
+}
+
+.headerBrand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+
+.headerBrand h1 {
+  color: transparent;
+  -webkit-text-stroke: var(--lightGreen) 2px;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+header img {
+  height: 70vh;
+}
