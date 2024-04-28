@@ -41,6 +41,6 @@ app.use("/api/login", loginRouter);
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
 
-app.listen(PORT, () => {
+app.listen(PORT || 4000, () => {
   info("server connected on port", PORT);
 });
